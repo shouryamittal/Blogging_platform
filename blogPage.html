@@ -1,0 +1,28 @@
+<div  class="container app">
+        <h3 style="color:white">Write Your Post here, You can post it to multiple platform on a single click!</h3>
+        <text-angular name="htmlcontenttwo" ng-model="htmlcontenttwo" id="main_editor">
+            
+        </text-angular>
+        <h3 style="color:white">Live Preview</h3>
+        	<pre id="preview" ta-bind="text" ng-model="htmlcontenttwo" ta-readonly='disabled' style="background-color: white"></pre>
+    </div>
+    
+    <div class="container" ng-controller="confirmController">
+    	<div class="row button_div">
+    		<div class="col-sm-12 col-md-2">
+    			<p style="color:white" >Upload your post to:</p>
+    		</div>
+
+    		<div class="col-sm-12 col-md-2">
+    			<button class="btn btn-primary" ng-click="shuttleScrap_confirm()">ShuttleScrap</button>		
+    		</div>
+
+    		<div class="col-md-2 col-sm-12">
+    			<button type="button" class="btn btn-primary" ng-click="bloodport_confirm()">BloodPort</button>
+    		</div>
+
+    		<div class="col-md-1 col-sm-12">
+    			<button type="button" class="btn btn-primary" ng-click="facebook_confirm()">Facebook</button>
+    		</div>
+    	</div>
+    </div>
