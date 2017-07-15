@@ -1,3 +1,14 @@
+<style type="text/css">
+  
+ body{
+  background: url('../img/2.jpg') no-repeat;
+  background-size: cover;
+  font-family: 'Arvo', serif;
+  overflow-x:hidden;
+  height: 100%;
+}
+
+</style>
 <nav class="navbar navbar-default navbar-fixed-top" ng-controller="confirmController" >
   <div class="container">
     <div class="navbar-header">
@@ -22,16 +33,22 @@
 
 
 
-<div  class="container app" style="padding-top:80px">
+<div class="container" style="padding-top:80px;padding-bottom:50px">
     <div class="row">
-        <div class="col-sm-12 scol-md-10">
-            <h3 class="heading">Write Your Post here, You can post it to multiple platform on a single click!</h3>
-        <text-angular name="htmlcontenttwo" ng-model="htmlcontenttwo" id="main_editor">
-            
-        </text-angular>
-        <h3  class="heading" >Live Preview</h3>
-            <pre id="preview" ta-bind="text" ng-model="htmlcontenttwo" ta-readonly='disabled' style="background-color: white"></pre>
+        <div class="col-xs-offset-1 col-xs-10  col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-12">
+            <h3 class="heading">A Practical Blog for Impractical People, Write your post here!!</h3>
+            <text-angular name="htmlcontenttwo" ng-model="post.htmlcontenttwo" id="main_editor">
+            </text-angular>
         </div>
     </div>
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-12">
+        <h3  class="heading" >Live Preview</h3>
+        <pre id="preview" ta-bind="text" ng-model="post.htmlcontenttwo" ta-readonly='disabled' style="background-color: white"></pre>
+      </div>
+    </div>
+        
+        
+   
 </div>
     
