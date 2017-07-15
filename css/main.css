@@ -1,27 +1,42 @@
-body{
-	background: url('../img/3.jpg') no-repeat;
+
+html,body{
+	background: url('../img/back.jpg') no-repeat;
 	background-size: cover;
 	font-family: 'Arvo', serif;
 	overflow-x:hidden;
+	height: 100%;
 }
 
+.brand
+{
+	padding: 30px;
+	padding-left: 100px;
+}
 .company_name{
 	color: #22aa86;
 	font-size:4.5vh;
-	margin-top: 4vh;
 	text-decoration: bold;
+	text-decoration: none;
 }
+.company_name:hover
+{
+	text-decoration: none;
+	color: white;
+}
+
 
 .slogan{
 	color: white;
 	font-size: 2.5vh;
+	padding-left: 35px;
 }
 
 .login_div{
 	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
 	color: white;
 	margin-top: 8vh;
-	height: 60vh;
+	height: 100%;
+	
 }
 
 .login{
@@ -32,6 +47,14 @@ body{
 	width: 100%;
 	margin-top: 2vh; 
 	background-color: #22aa86;
+}
+
+.heading
+{
+	font-size: 30px;
+	font-weight: bolder;
+	color:#22aa86; 
+
 }
 
 h1 small {
@@ -79,3 +102,11 @@ h1 small {
  	top:20px;
  	left:50%;
  }
+@media only screen and (max-width: 768px) and (min-width: 320px){
+	.heading
+	{
+		font-size: 20px;
+		font-weight: bolder;
+		text-align: center;
+	}
+}

@@ -1,29 +1,37 @@
-<div  class="container app">
+<nav class="navbar navbar-default navbar-fixed-top" ng-controller="confirmController" >
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"> </span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://test.shuttlescrap.com/" style="color:#22aa86;font-size:30px"><span>
+          <img src="img/1.png" width="30" height="30" alt="">
+      </span>Shuttlescrap.com</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <button class="btn btn-secondary navbar-btn" ng-click="shuttleScrap_confirm()" style="color:white;background-color:rgb(251, 118, 27)">Post to ShuttleScrap</button>
+        <button class="btn btn-secondary navbar-btn"  ng-click="bloodport_confirm()" style="color:white;background-color:rgb(251, 118, 27)">Post to BloodPORT</button>
+        <button class="btn btn-secondary navbar-btn"  ng-click="logOut()" style="color:white;background-color:rgb(251, 118, 27)">Logout</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div  class="container app" style="padding-top:80px">
     <div class="row">
-        <div class="col-md-10">
-            <h3 style="color:white">Write Your Post here, You can post it to multiple platform on a single click!</h3>
+        <div class="col-sm-12 scol-md-10">
+            <h3 class="heading">Write Your Post here, You can post it to multiple platform on a single click!</h3>
         <text-angular name="htmlcontenttwo" ng-model="htmlcontenttwo" id="main_editor">
             
         </text-angular>
-        <h3 style="color:white">Live Preview</h3>
+        <h3  class="heading" >Live Preview</h3>
             <pre id="preview" ta-bind="text" ng-model="htmlcontenttwo" ta-readonly='disabled' style="background-color: white"></pre>
         </div>
     </div>
 </div>
     
-    <div class="container control_button" ng-controller="confirmController" >
-    	<div class="row button_div">
-
-    		<div class="col-sm-12 col-md-2">
-    			<button class="btn btn-primary" ng-click="shuttleScrap_confirm()" >Post to ShuttleScrap</button>		
-    		</div>
-
-    		<div class="col-md-2 col-sm-12">
-    			<button type="button" class="btn btn-primary" ng-click="bloodport_confirm()" >Post to BloodPORT</button>
-    		</div>
-
-    		<div class="col-md-1 col-sm-12">
-    			<button type="button" class="btn btn-primary" ng-click="logOut()">Logout</button>
-    		</div>
-    	</div>
-    </div>

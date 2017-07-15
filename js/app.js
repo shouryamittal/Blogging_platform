@@ -1,6 +1,6 @@
 var app=angular.module('App',['ui.router','textAngular']);
 
-app.config(function($stateProvider,$urlRouterProvider){
+app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
 	$urlRouterProvider.otherwise("/login");
 	$stateProvider
 	.state('login',{
