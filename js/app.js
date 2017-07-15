@@ -23,7 +23,7 @@ app.controller('loginController',function($scope,$state,$http,$rootScope){
         {
             $http({
             method:'POST',
-            url:'http://localhost:8080/register/login',
+            url:'https://blogapi.shuttlescrap.com/register/login',
             data:{
                 user_email:$scope.user_email,
                 user_password:$scope.user_password
@@ -64,7 +64,7 @@ app.controller('loginController',function($scope,$state,$http,$rootScope){
         			console.log($scope.htmlcontenttwo);
                     $http({
                         method:'POST',
-                        url:'http://localhost:8080/register/post',
+                        url:'https://blogapi.shuttlescrap.com/register/post',
                         data:{
                             user_post:$scope.htmlcontenttwo
                         }
@@ -82,7 +82,7 @@ app.controller('loginController',function($scope,$state,$http,$rootScope){
             }
         }
 
-    	$scope.bloodport_confirm=function(){
+    	/*$scope.bloodport_confirm=function(){
     		var bloodport_check=false;
         if($scope.htmlcontenttwo)
             {
@@ -92,7 +92,7 @@ app.controller('loginController',function($scope,$state,$http,$rootScope){
         			console.log($scope.htmlcontenttwo);
                     $http({
                         method:'POST',
-                        url:'',
+                        url:'https://blog_api.shuttlescrap.com/register/post',
                         data:{
                             user_post:$scope.htmlcontenttwo
                         }
@@ -107,7 +107,7 @@ app.controller('loginController',function($scope,$state,$http,$rootScope){
         			alert('Please write Something to post');
         		}
             }
-    	}
+    	}*/
 
     	/*$scope.facebook_confirm=function(){
     		var fb_check=false;
