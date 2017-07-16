@@ -39,7 +39,7 @@ app.controller('loginController',function($scope,$state,$http,$rootScope,ShareEm
         {
             $http({
             method:'POST',
-            url:'http://localhost:8080/register/login',
+            url:'https://blogapi.shuttlescrap.com/register/login',
             data:{
                 user_email:$scope.user_email,
                 user_password:$scope.user_password
@@ -86,7 +86,7 @@ app.controller('loginController',function($scope,$state,$http,$rootScope,ShareEm
         			console.log($scope.post.htmlcontenttwo);
                     $http({
                         method:'POST',
-                        url:'http://localhost:8080/register/post',
+                        url:'https://blogapi.shuttlescrap.com/register/post',
                         data:{
                             user_post:$scope.post.htmlcontenttwo,
                             user_email:ShareEmail.get('loginController').user_email
